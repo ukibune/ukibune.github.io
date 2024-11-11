@@ -25,6 +25,8 @@ UiPathのコミュニティ: <u>UiPath Forum</u>など、コミュニティを�
 
 [rpa](https://cloud.uipath.com/meisen/academy_/courses?language=English&difficulty-level=1&q=rpa)
 
+[rpa-developer-foundation](https://academy.uipath.com/learning-plans/rpa-developer-foundation)
+
 ## UiPath Academy 1週間学習スケジュール（例）
 
 | 日付 | 午前 | 午後 | 内容 |
