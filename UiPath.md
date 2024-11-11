@@ -43,3 +43,7 @@ UiPathのコミュニティ: <u>UiPath Forum</u>など、コミュニティを�
  [RPA デベロッパー 基礎](https://cloud.uipath.com/meisen/academy_/learning-plans/rpa-developer-foundation-v202110-jp)
  
  [開発者のためのOrchestrator概要](https://cloud.uipath.com/meisen/academy_/courses/orchestrator-overview-for-rpa-developers-v202110-jp)
+
+ ---
+ ## study log
+ [unipath_studylog](unipath_studylog.md)
