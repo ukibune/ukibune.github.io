@@ -13,6 +13,7 @@
 UiPathのコミュニティ: <u>UiPath Forum</u>など、コミュニティを活用して疑問点を解決したり、他のユーザーと情報交換したりしましょう。
 
 ## link
-https://academy.uipath.com/courses?language=Chinese
 
-https://academy.uipath.com/courses?difficulty-level=1
+https://cloud.uipath.com/meisen/academy_/courses?language=Chinese
+
+https://cloud.uipath.com/meisen/academy_/courses?difficulty-level=1&language=English
