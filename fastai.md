@@ -1,3 +1,3 @@
-Here's a test image:
+Open jupyter notebook in colaboratory from github:
 
-![test](/assets/111.png)
+![fastai book's directory](/docs/assets/111.PNG)

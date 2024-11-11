@@ -1,2 +1,2 @@
-[fastai notes](fastai.md)
-[github/ghBlog notes](fastai.md)
+*[fastai notes](fastai.md)
+*[github/ghBlog notes](git&Blog.md)
