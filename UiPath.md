@@ -15,7 +15,12 @@
 上級: カスタムアクティビティの作成、Orchestratorの利用、AIとの連携
 
 ## study map
-<img src="/docs/assets/study_map_of_rpa.PNG" width="800">
+<img src="/docs/assets/study_map_of_rpa.PNG" width="800" >
+
+- [x]  [了解 UiPath Platform](https://cloud.uipath.com/meisen/academy_/courses/%E4%BA%86%E8%A7%A3-uipath-platform)
+- [ ]  [使用 Studio 构建您的第一个流程](https://cloud.uipath.com/meisen/academy_/courses/%E4%BD%BF%E7%94%A8-studio-%E6%9E%84%E5%BB%BA%E6%82%A8%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%B5%81%E7%A8%8B)
+- [ ]  [RPA 开发者的一天](https://cloud.uipath.com/meisen/academy_/courses/rpa-%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84%E4%B8%80%E5%A4%A9)
+- [ ]  [stuio 中的变量和参数](https://cloud.uipath.com/meisen/academy_/courses/studio-%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F%E5%92%8C%E5%8F%82%E6%95%B0)
 
 ## コミュニティ
 UiPathのコミュニティ: <u>UiPath Forum</u>など、コミュニティを活用して疑問点を解決したり、他のユーザーと情報交換したりしましょう。
