@@ -15,7 +15,8 @@
 上級: カスタムアクティビティの作成、Orchestratorの利用、AIとの連携
 
 ## study map
-<img src="/docs/assets/study_map_of_rpa.png" width="500>
+<img src="/docs/assets/study_map_of_rpa.png" width="500">
+
 ## コミュニティ
 UiPathのコミュニティ: <u>UiPath Forum</u>など、コミュニティを活用して疑問点を解決したり、他のユーザーと情報交換したりしましょう。
 
