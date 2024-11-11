@@ -1,3 +1,8 @@
+
+
+
+
+
 ## 目安時間
 一般的に、プログラミング経験者の方がUiPathを習得するまでの期間は、<u>2週間</u>から<u>1ヶ月</u>程度
 
@@ -14,12 +19,13 @@ UiPathのコミュニティ: <u>UiPath Forum</u>など、コミュニティを�
 
 ## link
 
-https://cloud.uipath.com/meisen/academy_/courses?language=Chinese
+[ch](https://cloud.uipath.com/meisen/academy_/courses?language=Chinese)
 
-https://cloud.uipath.com/meisen/academy_/courses?difficulty-level=1&language=English
+[en](https://cloud.uipath.com/meisen/academy_/courses?difficulty-level=1&language=English)
 
+[rpa](https://cloud.uipath.com/meisen/academy_/courses?language=English&difficulty-level=1&q=rpa)
 
-##　UiPath Academy 1週間学習スケジュール（例）
+## UiPath Academy 1週間学習スケジュール（例）
 
 | 日付 | 午前 | 午後 | 内容 |
 |---|---|---|---|
@@ -30,3 +36,8 @@ https://cloud.uipath.com/meisen/academy_/courses?difficulty-level=1&language=Eng
 | 5日目 | 例外処理とエラーハンドリング | 実務で役立つテクニック | エラーが発生した場合の対処法を学び、安定した自動化を作成します。実務でよく使うテクニックやライブラリの使い方を学びます。 |
 | 6日目 | Orchestratorの概要 | 実践演習 | Orchestratorの基本的な機能を学び、ロボットのスケジューリングや監視の方法を学びます。これまで学んだ知識を活かして、実際の業務に役立つ自動化を作成します。 |
 | 7日目 | 復習と課題 | Q&A | 1週間の学習内容を復習し、不明な点を質問します。簡単な課題に挑戦し、理解度を確認します。 |
+
+---
+ [RPA デベロッパー 基礎](https://cloud.uipath.com/meisen/academy_/learning-plans/rpa-developer-foundation-v202110-jp)
+ 
+ [開発者のためのOrchestrator概要](https://cloud.uipath.com/meisen/academy_/courses/orchestrator-overview-for-rpa-developers-v202110-jp)
