@@ -11,6 +11,6 @@ permalink: pretty
 
 nav:
   - title: Home
-    url: /
+    url: "https://ukibune.github.io"
   - title: fail
-    url: /fail/
+    url: "https://ukibune.github.io/fail"
