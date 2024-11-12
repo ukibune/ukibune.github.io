@@ -18,3 +18,4 @@
 - noreferrer: リファラー（参照元）情報を送信しない
 - noopener: 新しいウィンドウでリンクを開き、親ウィンドウとのJavaScriptの相互作用を制限する
 - icon: ファビコンなどのアイコンを指定する
+ 9. still can't fit into the chinese font ,tired.
