@@ -1,3 +1,4 @@
+* [index](index.md)
 # git/md/blog
 <24/11/11>
 1. learnd how to add a directory

@@ -1,3 +1,4 @@
+* [index](index.md)
 ## notes
 
 Open jupyter notebook in colaboratory from github:<br>
