@@ -22,3 +22,27 @@ debug や publish　できません。
 ### 2
 DOC | 
  [the-user-interface](https://docs.uipath.com/ja/studio/standalone/2024.10/user-guide/the-user-interface)
+
+### 3
+「Build your first automation process with Studio」\
+ Build a new automation process that consolidates data from **multiple Excel reports** into one and creates a **pivot table and chart**.
+
+ **Business requirements:**
+
+•
+**Streamline** the process by integrating data from multiple reports and creating a single dashboard view.
+
+•
+Timely reporting allowing the Sales team to take decisions based on **real time** data.
+
+•
+Improved data quality (automation will allow **validation** of the data from the coffee shops before it's merged and processed).
+
+•
+If the number of shops increases, automation can be **scalable** to handle more data.
+
+•
+Reduced manual effort.
+
+•
+Risk mitigation (automating the process will reduce errors that could happen when copying and pasting the data manually).
