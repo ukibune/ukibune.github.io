@@ -16,3 +16,7 @@ debug や publish　できません。
 今後の練習を通して、少しずつ理解を深めていきたいと思っています。
 
 <img src="/docs/assets/debug_interface.PNG" width="800" >
+
+### 2
+DOC | 
+ [the-user-interface](https://docs.uipath.com/ja/studio/standalone/2024.10/user-guide/the-user-interface)
