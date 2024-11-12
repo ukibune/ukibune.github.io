@@ -8,8 +8,16 @@ description: Acctually It's a NoteBook
 
 nav:
   - title: Home
-    url: /index.md
+    url: /
   - title: fail
-    url: /fail
+    url: /fail.md
   - title: fastai
-    url: /fastai/
+    url: /fastai.md
+  - title: git&Blog
+    url: /git&Blog.md
+  - title: UiPath
+    url: /UiPath.md
+  - title: study
+    url: /study.md
+  - title: unipath_studylog
+    url: /unipath_studylog.md
