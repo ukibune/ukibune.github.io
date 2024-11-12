@@ -9,6 +9,13 @@ layout: default
 
 </head>
 <body>
+    <nav>
+        <ul>
+          {% for nav in site.nav %}
+            <li><a href="{{ nav.url }}">{{ nav.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
     <p>
         <a href="https://ukibune.github.io/fastai">fastai</a><br>
         <a href="https://ukibune.github.io/fail">fail</a><br>
