@@ -1,9 +1,18 @@
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap" rel="stylesheet">
 
-<div id="noto-serif-sc-test2">
+<style>
+.noto-serif-sc-uniquifier {
+  font-family: "Noto Serif SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+</style>
+
+<div id="noto-serif-sc-uniquifier">
 
 # <24/11/12>
 - ## 学习地图和学习计划
@@ -19,7 +28,6 @@
 </div>
 ---
 
-<div id="test">
 
 # <24/11/12>
 - ## 学习地图和学习计划
@@ -31,5 +39,3 @@
 4. 定期复盘： 定期回顾学习进度，总结经验教训，并对学习计划进行优化。
 ### 根据个人学习习惯选择适合自己的方法： 
 有些人更喜欢自由灵活的学习方式，适合以学习地图为主；而有些人更喜欢有明确目标和计划的学习方式，适合以学习计划为主。
-
-</div>
