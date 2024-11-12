@@ -12,6 +12,8 @@
 }
 </style>
 
+</head>
+
 <div id="noto-serif-sc-uniquifier">
 
 # <24/11/12>
