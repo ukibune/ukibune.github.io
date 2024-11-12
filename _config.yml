@@ -14,3 +14,15 @@ nav:
     url: /
   - title: fail
     url: /fail/
+  - title: fastai
+    url: /fastai/
+  - title: git&Blog
+    url: /git&Blog/
+  - title: study
+    url: /study/
+  - title: UiPath
+    url: /UiPath/UiPath/
+  - title: UiPath_studylog
+    url: /UiPath/UiPath_studylog/
+  - title: Build your first automation process with Studio
+    url: /UiPath/Build your first automation process with Studio/
