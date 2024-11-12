@@ -1,4 +1,4 @@
-* [index](index.md)
+* [index](/index.html)
 # fail
 ---
 <24/11/12>

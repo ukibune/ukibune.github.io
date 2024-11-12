@@ -1,4 +1,4 @@
-* [index](index.md)
+* [index](/index.html)
 # UiPath study log
 ## <24/11/11>
 ### 1

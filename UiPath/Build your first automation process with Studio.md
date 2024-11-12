@@ -1,4 +1,4 @@
-* [index](index.md)
+* [index](/index.html)
 
 # 「Build your first automation process with Studio」
 
