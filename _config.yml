@@ -13,12 +13,4 @@ nav:
   - title: Home
     url: /
   - title: fail
-    url: /fail.md
-  - title: fastai
-    url: /fastai.md
-  - title: git&Blog
-    url: /git&Blog.md
-  - title: UiPath
-    url: /Uipath/
-  - title: study
-    url: /study.md
+    url: /fail/
