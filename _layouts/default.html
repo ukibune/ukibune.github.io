@@ -28,11 +28,13 @@
       {% endif %}
 
       <nav>
+        <p>
         <ul>
           {% for item in site.nav %}
             <li><a href="{{ item.url }}">{{ item.title }}</a></li>
           {% endfor %}
         </ul>
+        </p>
       </nav>
       
     </header>
