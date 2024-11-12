@@ -1,8 +1,8 @@
 <head>
-  <link rel="stylesheet" href="/css/chiness.css">
-</head>
-
-<div id="test">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap" rel="stylesheet">
+<div id="noto-serif-sc-test2">
 
 # <24/11/12>
 - ## 学习地图和学习计划
