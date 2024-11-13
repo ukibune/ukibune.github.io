@@ -65,3 +65,15 @@ Making a change to the robot type later in the phase may prove to be quite compl
 3.  We must also ensure that we have installed the required **dependencies** to use the activities needed for the automation. 
 
 4.   When developing workflows, we should also consider automation **best** practices, such as using a **centralized knowledge repository, source control, Workflow Analyzer**, etc.
+
+---
+
+# <24/11/13>
+
+## ???
+~~~
+按照教程做的PJ有一个文件不能读成功，没有任何提示，INFO显示的是读取了。还是我觉得行数是不是不太对啊才发现的...所以这种读入不CHECK行数不完了吗！
+~~~
+~~~
+copy能读取的文件把数据CO进去解决了，所以那个EXCEL FILE到底怎么回事？
+~~~
