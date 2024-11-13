@@ -1,10 +1,10 @@
 
 # UiPath
 
-* [UiPath_Index](/UiPath/UiPath_index.md)
 * [UiPath](/UiPath/UiPath.md)
-* [UiPath_studylog](/UiPath/UiPath_studylog.md)
-* [UiPath_schedule&map](/UiPath/UP_schedule&map.md)
+* [UiPath_Summary](/UiPath/UiPath_Summary.md)
+* [UiPath_Schedule&Map](/UiPath/UP_Schedule&Mapp.md)
+* [UiPath_Before＆c1](/UiPath/02c1.md)
 * [Build your first automation process with Studio](/UiPath/c2.md)
 
 
