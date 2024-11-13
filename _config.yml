@@ -12,19 +12,15 @@ permalink: pretty
 nav:
   - title: Home
     url: /
-  - title: fail
-    url: /fail/
-  - title: fastai
-    url: /fastai/
+  - title: ・UiPath_index
+    url: /UiPath/UiPath_index/
   - title: git&Blog
     url: /git&Blog/
-  - title: study
-    url: /study/
-  - title: UiPath
+  - title: ゜UiPath
     url: /UiPath/UiPath/
-  - title: UiPath_studylog
+  - title: ゜UiPath_StudyLog
     url: /UiPath/UiPath_studylog/
-  - title: UP_schedule&map
+  - title: ゜UP_schedule&map
     url: /UiPath/UP_schedule&map/
-  - title: Build your first automation process with Studio
+  - title: ゜Build your first automation process with Studio
     url: /UiPath/Build your first automation process with Studio/

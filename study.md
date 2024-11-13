@@ -1,5 +1,5 @@
-* [index](index.md)
-# study
+
+# Study
 ## <24/11/12>
 - ## 学习地图和学习计划
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__Gemini__: 学习地图更适合长期规划，而学习计划则更适合短期执行。 

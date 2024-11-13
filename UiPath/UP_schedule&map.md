@@ -1,4 +1,3 @@
-* [index](/index.html)
 
 ## Schedule
 

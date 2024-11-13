@@ -1,6 +1,6 @@
-* [index](/index.html)
 
-# 「Build your first automation process with Studio」
+
+# 「[Build your first automation process with Studio](/UiPath/Build%20your%20first%20automation%20process%20with%20Studio.md)」
 
 ## 目標
  Build a new automation process that consolidates data from **multiple Excel reports** into one and creates a **pivot table and chart**.
