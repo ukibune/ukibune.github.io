@@ -1,6 +1,6 @@
 
-* [Others_Index](/Others/Others.md)
-* [git&Blog](/Others/git&Blog.md)
-* [fastai](/Others/fastai.md)
-* [fail](/Others/fail.md)
-* [Study](/Others/study.md)
+* [Others_Index](/Others/Others)
+* [git&Blog](/Others/git&Blog)
+* [fastai](/Others/fastai)
+* [fail](/Others/fail)
+* [Study](/Others/study)
