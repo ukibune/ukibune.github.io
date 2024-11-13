@@ -9,7 +9,7 @@
 
 # Other
 
-* [git&Blog](/git&Blog)
-* [fastai](/fastai)
-* [fail](/fail)
-* [Study](/Study)
+* [git&Blog](/Others/git&Blog)
+* [fastai](/Others/fastai)
+* [fail](/Others/fail)
+* [Study](/Others/Study)
