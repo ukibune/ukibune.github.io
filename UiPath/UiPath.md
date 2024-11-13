@@ -2,7 +2,7 @@
 # UiPath
 
 * [UiPath_Summary](/UiPath/UiPath_Summary)
-* [UiPath_Schedule&Map](/UiPath/UP_Schedule&Map)
+* [UiPath_Schedule&Map](/UiPath/UP_Schedule_Map)
 * [UiPath_Before＆c1](/UiPath/02c1)
 * [C2:Build your first automation process with Studio](/UiPath/c2)
 * [C3:A Day in the Life of an RPA Developer](/UiPath/c3)
