@@ -3,7 +3,7 @@
 
 * [UiPath](/UiPath/UiPath.md)
 * [UiPath_Summary](/UiPath/UiPath_Summary.md)
-* [UiPath_Schedule&Map](/UiPath/UP_Schedule&Mapp.md)
+* [UiPath_Schedule&Map](/UiPath/UP_Schedule&Map.md)
 * [UiPath_Before＆c1](/UiPath/02c1.md)
 * [Build your first automation process with Studio](/UiPath/c2.md)
 
