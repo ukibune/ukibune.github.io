@@ -14,13 +14,15 @@ nav:
     url: /
   - title: ・UiPath_index
     url: /UiPath/UiPath_index/
-  - title: git&Blog
-    url: /Others/git&Blog/
+  - title: ・Others
+    url: /Others/Others/
+  - title: ☆git&Blog
+    url: /Others/git&Blog/☆
   - title: ゜UiPath
     url: /UiPath/UiPath/
-  - title: ゜UiPath_StudyLog
-    url: /UiPath/UiPath_studylog/
   - title: ゜UP_schedule&map
     url: /UiPath/UP_schedule&map/
   - title: ゜Build your first automation process with Studio
     url: /UiPath/c2/
+  - title: ゜A Day in the Life of an RPA Developer
+    url: /UiPath/c3/
