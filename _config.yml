@@ -12,13 +12,13 @@ permalink: pretty
 nav:
   - title: Home
     url: /
-  - title: ・UiPath_index
-    url: /UiPath/UiPath_index/
+  - title: ・UiPath
+    url: /UiPath/UiPath/
   - title: ・Others
     url: /Others/Others/
   - title: ☆git&Blog
     url: /Others/git&Blog/
-  - title: ゜UiPath
-    url: /UiPath/UiPath/
-  - title: ゜UP_schedule&map
-    url: /UiPath/UP_schedule&map/
+  - title: ゜UP_UP_Schedule&Map
+    url: /UiPath/UP_UP_Schedule&Map/
+  - title: ゜Variables, Constants and Arguments in Studio
+    url: /UiPath/c4/

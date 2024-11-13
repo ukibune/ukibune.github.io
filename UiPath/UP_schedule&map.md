@@ -25,3 +25,9 @@
 
 ## Study map
 <img src="/assets/pic/study_map_of_rpa.PNG" width="800" >
+
+## Notes
+
+* [Build your first automation process with Studio](/UiPath/c2)
+* [A Day in the Life of an RPA Developer](/UiPath/c3)
+* [Variables, Constants and Arguments in Studio](/UiPath/c4)
