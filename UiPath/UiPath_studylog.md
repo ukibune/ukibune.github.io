@@ -17,7 +17,7 @@ debug や publish　できません。
 ここでデバッグインターフェースを紹介しましたが、まだ全てを理解できたわけではありません。
 今後の練習を通して、少しずつ理解を深めていきたいと思っています。
 
-<img src="/docs/assets/debug_interface.PNG" width="800" >
+<img src="/assets/pic/debug_interface.PNG" width="800" >
 
 ### 2
 DOC | 

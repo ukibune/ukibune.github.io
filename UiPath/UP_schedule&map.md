@@ -24,4 +24,4 @@
 ---
 
 ## Study map
-<img src="/docs/assets/study_map_of_rpa.PNG" width="800" >
+<img src="/assets/pic/study_map_of_rpa.PNG" width="800" >
