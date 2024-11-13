@@ -20,4 +20,27 @@
 - noreferrer: リファラー（参照元）情報を送信しない
 - noopener: 新しいウィンドウでリンクを開き、親ウィンドウとのJavaScriptの相互作用を制限する
 - icon: ファビコンなどのアイコンを指定する
- 9. still can't fit into the chinese font ,tired.
+9. still can't fit into the chinese font ,tired.
+---
+10. 
+
+   
+    In HTML, the <dd> tag stands for "definition description." It's used to provide a description, definition, or value for the preceding term (<dt>) in a description list (<dl>).
+   ~~~
+   <dl>
+  <dt>HTML</dt>
+  <dd>HyperText Markup Language</dd>
+
+  <dt>CSS</dt>
+  <dd>Cascading Style Sheets</dd>
+  </dl>
+   ~~~ 
+<dl>
+  <dt>HTML</dt>
+  <dd>HyperText Markup Language</dd>
+
+  <dt>CSS</dt>
+  <dd>Cascading Style Sheets</dd>
+</dl>
+
+---
