@@ -7,8 +7,9 @@ plugins:
 title: Ukibune's Blog
 description: Acctually It's a NoteBook
 baseurl: "/"
-permalink: pretty
-
+permalink: :title/
+tags:
+  permalink: /tags/:tag/
 nav:
   - title: Home
     url: /
