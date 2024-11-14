@@ -10,7 +10,7 @@ baseurl: "/"
 permalink: :title/
 tags:
   permalink: /tags/:tag/
-tag_page: true
+  layout: tag
 
 nav:
   - title: Home
@@ -23,5 +23,5 @@ nav:
     url: /git-Blog/
   - title: ゜UP_Schedule&Map
     url: /UP-Schedule-Map/
-  - title: ゜Variables, Constants and Arguments in Studio
-    url: /c4/
+  - title: ゜Control Flow in Studio
+    url: /c5/
