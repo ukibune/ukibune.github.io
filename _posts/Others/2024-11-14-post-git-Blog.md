@@ -1,5 +1,5 @@
 ---
-title:git&Blog
+title: git&Blog
 ---
 
 # Cmd/Mark Down
