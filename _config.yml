@@ -10,6 +10,8 @@ baseurl: "/"
 permalink: :title/
 tags:
   permalink: /tags/:tag/
+tag_page: true
+
 nav:
   - title: Home
     url: /
