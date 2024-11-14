@@ -14,12 +14,12 @@ nav:
   - title: Home
     url: /
   - title: ・UiPath
-    url: /UiPath index/
+    url: /UiPath/
   - title: ・Others
-    url: /Others index/
+    url: /Others/
   - title: ☆git&Blog
-    url: /git&Blog/
+    url: /git-Blog/
   - title: ゜UP_Schedule&Map
-    url: /Schedule_Map/
+    url: /Schedule-Map/
   - title: ゜Variables, Constants and Arguments in Studio
-    url: /Variables, Constants and Arguments in Studio/
+    url: /c4/

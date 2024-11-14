@@ -1,6 +1,6 @@
 ---
 title: UiPath Summary
-tags: [UiPath]
+tags: [uipath]
 ---
 
 # UiPath

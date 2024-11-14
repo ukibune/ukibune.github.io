@@ -1,6 +1,6 @@
 ---
 title: Schedule&Map
-tags: [UiPath]
+tags: [uipath]
 ---
 
 ## Schedule
