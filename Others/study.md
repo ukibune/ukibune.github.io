@@ -1,6 +1,6 @@
 ---
 date: 2024-11-13
-lang: zh-CN
+layout: default_cn
 ---
 
 # Study

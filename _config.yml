@@ -22,3 +22,12 @@ nav:
     url: /UiPath/UP_Schedule_Map/
   - title: ゜Variables, Constants and Arguments in Studio
     url: /UiPath/c4/
+
+
+## 关于标签 {{ page.tag }} 的文章
+
+{% for post in site.posts %}
+  {% if post.tags contains "UiPath" %}
+    * <a href="{{ post.url }}">{{ post.title }}</a>
+  {% endif %}
+{% endfor %}

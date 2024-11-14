@@ -3,7 +3,7 @@ title:git&Blog
 ---
 
 # Cmd/Mark Down
-<24/11/11>
+## <24/11/11>
 1. learnd how to add a directory
 2. learnd how to use **cd** / **mkdir**
 3. GitHub doesn't recognize **empty directories**. To create an empty directory, you need to add an empty file to it. You can create an empty file named .gitkeep or any other name.
@@ -29,7 +29,8 @@ title:git&Blog
 
    
     In HTML, the <dd> tag stands for "definition description." It's used to provide a description, definition, or value for the preceding term (<dt>) in a description list (<dl>).
-   ~~~
+
+
    <dl>
   <dt>HTML</dt>
   <dd>HyperText Markup Language</dd>
@@ -37,15 +38,18 @@ title:git&Blog
   <dt>CSS</dt>
   <dd>Cascading Style Sheets</dd>
   </dl>
-   ~~~ 
-<dl>
-  <dt>HTML</dt>
-  <dd>HyperText Markup Language</dd>
-
-  <dt>CSS</dt>
-  <dd>Cascading Style Sheets</dd>
-</dl>
 
 ---
-<24/11/13>
+## <24/11/13>
 11. `fn + prt sc` 截图
+
+
+---
+## <24/11/14>
+
+### checkbox
+
+* <input type="checkbox"> 1
+* <input type="checkbox"> 2
+* <input type="checkbox"> 3
+---
