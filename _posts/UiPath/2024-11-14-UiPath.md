@@ -1,5 +1,5 @@
 ---
-tags: UiPath
+tags: [UiPath]
 ---
 
 # UiPath
