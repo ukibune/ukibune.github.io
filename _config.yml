@@ -22,7 +22,3 @@ nav:
     url: /UiPath/UP_Schedule_Map/
   - title: ゜Variables, Constants and Arguments in Studio
     url: /UiPath/c4/
-
-
-permalink: /tags/:tag:slug/
-tag_page_layout: tag
