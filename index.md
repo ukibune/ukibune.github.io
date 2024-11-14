@@ -25,3 +25,5 @@ title: Home
 
 # Test
 * [UiPath](/tags/UiPath)
+
+* [02c1](/_posts/UiPath/2024-11-14-post-02c1.md)
