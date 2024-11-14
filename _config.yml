@@ -24,10 +24,5 @@ nav:
     url: /UiPath/c4/
 
 
-## 关于标签 {{ page.tag }} 的文章
-
-{% for post in site.posts %}
-  {% if post.tags contains "UiPath" %}
-    * <a href="{{ post.url }}">{{ post.title }}</a>
-  {% endif %}
-{% endfor %}
+permalink: /tags/:tag:slug/
+tag_page_layout: tag
