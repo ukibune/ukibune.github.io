@@ -4,26 +4,27 @@ title: Home
 
 # UiPath
 
-* [UiPath](/UiPath/UiPath.md)
-* [UiPath_Summary](/UiPath/UiPath_Summary.md)
-* [UiPath_Schedule&Map](/UiPath/UP_Schedule_Map.md)
-* [UiPath_Before＆c1](/UiPath/02c1.md)
-* [Build your first automation process with Studio](/UiPath/c2.md)
+* [UiPath](/UiPath/)
+* [UiPath_Summary](/UiPath-Summary/)
+* [UiPath_Schedule&Map](/UP-Schedule-Map/)
+* [UiPath_Before＆c1](/02c1/)
+* [Build your first automation process with Studio](/c2/)
 
 
 
 
 # Others
 
-* [Others](/Others/Others.md)
-* [git&Blog](/Others/git&Blog.md)
-* [fastai](/Others/fastai.md)
-* [fail](/Others/fail.md)
-* [Study](/Others/study.md)
+* [Others](/Others/)
+* [git&Blog](/git-Blog/)
+* [fastai](/fastai/)
+* [fail](/fail/)
+* [Study](/study/)
 
 
 
 # Test
-* [UiPath](/tags/UiPath)
+* [UiPath](/tags/UiPath/)
 
 * [02c1](/_posts/UiPath/2024-11-14-02c1.md)
+* [02c1](/02c1/)
