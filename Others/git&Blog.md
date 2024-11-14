@@ -1,5 +1,8 @@
+---
+title:git&Blog
+---
 
-# git/md/blog
+# Cmd/Mark Down
 <24/11/11>
 1. learnd how to add a directory
 2. learnd how to use **cd** / **mkdir**
