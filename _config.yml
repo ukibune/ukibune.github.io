@@ -8,9 +8,7 @@ title: Ukibune's Blog
 description: Acctually It's a NoteBook
 baseurl: "/"
 permalink: :title/
-tags:
-  permalink: /tags/:tag/
-  layout: tag
+
 
 nav:
   - title: Home
@@ -25,3 +23,16 @@ nav:
     url: /UP-Schedule-Map/
   - title: ゜Control Flow in Studio
     url: /c5/
+
+collections:
+    tag:
+        permalink: /tags/:title
+        output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "tag"
+    values:
+      layout: tag_page
