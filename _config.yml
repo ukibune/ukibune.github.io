@@ -12,6 +12,8 @@ jekyll-archives:
     year: '/archives/year/:year/'
     month: '/archives/month/:year/:month/'
     tag: '/tag/:tag/'
+  paginate: true
+  tag_cloud: true
 
 title: Ukibune's Blog
 description: Acctually It's a NoteBook
