@@ -1,13 +1,12 @@
 ---
 layout: default
+title: tag
 ---
-<h2>{{ page.tag }}</h2>
+
 <ul>
-{% for post in site.tags[page.tag] %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})
-  {%- if site.show_excerpts -%}
-    {{ post.excerpt }}
-  {%- endif -%}
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d" }})
   </li>
-{% endfor %}
+  {% endfor %}
 </ul>

@@ -3,6 +3,15 @@
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme
+- jekyll-archives
+
+jekyll-archives:
+  enabled: [year, month, tag] # 启用年、月、标签归档
+  layout: tag
+  permalinks:
+    year: '/archives/year/:year/'
+    month: '/archives/month/:year/:month/'
+    tag: '/tag/:tag/'
 
 title: Ukibune's Blog
 description: Acctually It's a NoteBook
@@ -23,16 +32,3 @@ nav:
     url: /UP-Schedule-Map/
   - title: ゜Control Flow in Studio
     url: /c5/
-
-collections:
-    tag:
-        permalink: /tags/:title
-        output: true
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "tag"
-    values:
-      layout: tag_page
