@@ -1,5 +1,6 @@
 ---
 title: suisuinian
+layout: default
 ---
 # 想做一个进度条手机软件！
 ## 核心

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+ 
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Build your first automation process with Studio | Ukibune’s Blog</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Build your first automation process with Studio" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="「Build your first automation process with Studio」" />
+<meta property="og:description" content="「Build your first automation process with Studio」" />
+<link rel="canonical" href="http://localhost:4000/c2/" />
+<meta property="og:url" content="http://localhost:4000/c2/" />
+<meta property="og:site_name" content="Ukibune’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-11-13T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Build your first automation process with Studio" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-11-13T00:00:00+09:00","datePublished":"2024-11-13T00:00:00+09:00","description":"「Build your first automation process with Studio」","headline":"Build your first automation process with Studio","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/c2/"},"url":"http://localhost:4000/c2/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Build your first automation process with Studio</h1>
+      <h2 class="project-tagline">Acctually It's a NoteBook</h2>
+      
+      
+
+      <nav class="nav">
+        <ul>
+          
+            <li><a href="/">Home</a></li>
+          
+            <li><a href="/UiPath/">・UiPath</a></li>
+          
+            <li><a href="/Others/">・Others</a></li>
+          
+            <li><a href="/git-Blog/">☆git&Blog</a></li>
+          
+            <li><a href="/UP-Schedule-Map/">゜UP_Schedule&Map</a></li>
+          
+            <li><a href="/c5/">゜Control Flow in Studio</a></li>
+          
+        </ul>
+      </nav>
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="build-your-first-automation-process-with-studio">「<a href="https://academy.uipath.com/courses/build-your-first-automation-process-with-studio">Build your first automation process with Studio</a>」</h1>
+
+<h2 id="目標">目標</h2>
+<p>Build a new automation process that consolidates data from <strong>multiple Excel reports</strong> into one and creates a <strong>pivot table and chart</strong>.</p>
+
+<hr />
+
+<h2 id="business-requirements">Business requirements:</h2>
+
+<p>•
+<strong>Streamline</strong> the process by integrating data from multiple reports and creating a single dashboard view.</p>
+
+<p>•
+Timely reporting allowing the Sales team to take decisions based on <strong>real time</strong> data.</p>
+
+<p>•
+Improved data quality (automation will allow <strong>validation</strong> of the data from the coffee shops before it’s merged and processed).</p>
+
+<p>•
+If the number of shops increases, automation can be <strong>scalable</strong> to handle more data.</p>
+
+<p>•
+Reduced manual effort.</p>
+
+<p>•
+Risk mitigation (automating the process will reduce errors that could happen when copying and pasting the data manually).</p>
+
+<h2 id="work-flow">WORK FLOW</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BA分析，做文件(PDD)，PJ签字，设计(SDD)，制作
+（没这么多人就全自己来）
+</code></pre></div></div>
+<ol>
+  <li>
+    <h3 id="capturing-the-as-is-and-to-be-process-steps">Capturing the ‘as-is’ and ‘to-be’ process steps</h3>
+    <p>Capturing the <strong>‘as-is’</strong> and <strong>‘to-be’</strong> process steps
+Usually, in an automation project implementation, the <strong>Business Analyst</strong> is the one who captures all the ‘as-is’ and ‘to-be’ process steps and any other documented details from the <strong>subject matter experts (SME)</strong> and the business team.</p>
+  </li>
+  <li>
+    <h3 id="documenting-the-process-steps">Documenting the process steps</h3>
+    <p>Afterwards, the process steps are thoroughly documented within the <strong>Process Definition Document (PDD)</strong> and validated with the Solution Architect.</p>
+  </li>
+  <li>
+    <h3 id="signing-off-the-pdd">Signing-off the PDD</h3>
+    <p>It is the <strong>Project Manager</strong>’s responsibility to obtain <strong>sign-off</strong> on the documented PDD from the business team.</p>
+  </li>
+  <li>
+    <h3 id="designing-the-solution">Designing the solution</h3>
+
+    <p>Once the business requirements of a process are finalized, the Solution Design stage of the implementation process begins. During this stage, the <strong>Solution Architect</strong> designs <strong>a future state flow</strong> and maps out the various modules to be developed to complete the automation.</p>
+  </li>
+  <li>
+    <h3 id="developing-the-solution">Developing the solution</h3>
+
+    <p>Next, the <strong>Automation Developers</strong> <code class="language-plaintext highlighter-rouge">create the modules</code> outlined in the design whiteboard using the <strong>PDD</strong> and <strong>Solution Design Document (SDD)</strong> as references.</p>
+  </li>
+</ol>
+
+<h2 id="there-are-although-some-important-aspects-we-should-consider-before-diving-in">There are although, some <strong>important aspects</strong> we should consider before diving in.</h2>
+
+<p>Here are some examples:</p>
+<ol>
+  <li>
+    <p>Deciding between <strong>attended or unattended</strong> automation is the first important decision that impacts <code class="language-plaintext highlighter-rouge">how we build the code</code>.
+Making a change to the robot type later in the phase may prove to be quite complicated.</p>
+  </li>
+  <li>
+    <p>Choosing the correct type of <strong>layout</strong> for the project in Studio is also essential. We can choose from <strong>sequences, flowcharts, and state machines</strong>.</p>
+  </li>
+  <li>
+    <p>We must also ensure that we have installed the required <strong>dependencies</strong> to use the activities needed for the automation.</p>
+  </li>
+  <li>
+    <p>When developing workflows, we should also consider automation <strong>best</strong> practices, such as using a <strong>centralized knowledge repository, source control, Workflow Analyzer</strong>, etc.</p>
+  </li>
+</ol>
+
+<hr />
+
+<h1 id="241113">&lt;24/11/13&gt;</h1>
+
+<h2>???</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>按照教程做的PJ有一个文件不能读成功，没有任何提示，INFO显示的是读取了。还是我觉得行数是不是不太对啊才发现的...所以这种读入不CHECK行数不完了吗！
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>copy能读取的文件把数据CO进去解决了，所以那个EXCEL FILE到底怎么回事？
+</code></pre></div></div>
+<hr />
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>OK,FINE.结果是故意的，因为SheetName不对，我们设定读的是Sheet1...
+我反正完全没想到因为这个！
+</code></pre></div></div>
+<p><img src="/assets/pic/sheet1.PNG" alt="" /></p>
+<ul>
+  <li>这里学的是用<strong>BP</strong>看是哪里出了问题，文件1 有追加，但文件2 没有追加，文件3 有追加…以此得知问题出在文件2
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>好吧这次是教程错了，我看半天！
+string 现在要用 = &lt;&gt; 了
+IS ISNot 不适用。
+我保证我也用的VB！
+</code></pre></div>    </div>
+    <p><img src="assets\pic\24111301.png" alt="" /></p>
+  </li>
+</ul>
+
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>

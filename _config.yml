@@ -4,22 +4,13 @@ remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme
 - jekyll-archives
-
-jekyll-archives:
-  enabled: [year, month, tag] # 启用年、月、标签归档
-  layout: tag
-  permalinks:
-    year: '/archives/year/:year/'
-    month: '/archives/month/:year/:month/'
-    tag: '/tag/:tag/'
-  paginate: true
-  tag_cloud: true
+- jekyll-paginate
 
 title: Ukibune's Blog
 description: Acctually It's a NoteBook
 baseurl: "/"
 permalink: :title/
-
+layout: default
 
 nav:
   - title: Home
@@ -34,3 +25,12 @@ nav:
     url: /UP-Schedule-Map/
   - title: ゜Control Flow in Studio
     url: /c5/
+
+# ...其他配置
+paginate: 10  # 每页显示的文章数量
+
+# 标签页配置
+jekyll-archives:
+  enabled: [tags]
+  layout: tag
+  permalink: "/tag/:tag/"

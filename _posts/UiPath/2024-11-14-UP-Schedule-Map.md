@@ -1,6 +1,7 @@
 ---
 title: Schedule&Map
 tags: uipath
+layout: default
 ---
 
 ## Schedule

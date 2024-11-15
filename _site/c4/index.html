@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+ 
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Variables, Constants and Arguments in Studio | Ukibune’s Blog</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Variables, Constants and Arguments in Studio" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Variables, Constants and Arguments in Studio" />
+<meta property="og:description" content="Variables, Constants and Arguments in Studio" />
+<link rel="canonical" href="http://localhost:4000/c4/" />
+<meta property="og:url" content="http://localhost:4000/c4/" />
+<meta property="og:site_name" content="Ukibune’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-11-14T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Variables, Constants and Arguments in Studio" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-11-14T00:00:00+09:00","datePublished":"2024-11-14T00:00:00+09:00","description":"Variables, Constants and Arguments in Studio","headline":"Variables, Constants and Arguments in Studio","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/c4/"},"url":"http://localhost:4000/c4/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Variables, Constants and Arguments in Studio</h1>
+      <h2 class="project-tagline">Acctually It's a NoteBook</h2>
+      
+      
+
+      <nav class="nav">
+        <ul>
+          
+            <li><a href="/">Home</a></li>
+          
+            <li><a href="/UiPath/">・UiPath</a></li>
+          
+            <li><a href="/Others/">・Others</a></li>
+          
+            <li><a href="/git-Blog/">☆git&Blog</a></li>
+          
+            <li><a href="/UP-Schedule-Map/">゜UP_Schedule&Map</a></li>
+          
+            <li><a href="/c5/">゜Control Flow in Studio</a></li>
+          
+        </ul>
+      </nav>
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="variables-constants-and-arguments-in-studio">Variables, Constants and Arguments in Studio</h1>
+
+<p><a href="https://cloud.uipath.com/meisen/academy_/courses/studio-%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F%E5%92%8C%E5%8F%82%E6%95%B0">CN</a>
+//
+<a href="https://cloud.uipath.com/meisen/academy_/courses/variables-constants-and-arguments-in-studio">EN</a></p>
+
+<h2 id="变量">变量</h2>
+<p>-
+  有些创造变量的方法在新版本中已经不适用了。</p>
+<ul>
+  <li>
+    <h2 id="不能在sequence里右键面板或快捷键添加变量要在输入框里快捷键或者扩展面板选-优自动分配scopesequence">不能在Sequence里右键面板或快捷键添加变量，要在输入框里快捷键，或者扩展面板选。 优：自动分配scope（sequence）</h2>
+    <p>Set var: status <br />
+   也不适用好吧！
+   在输入框里用 <code class="language-plaintext highlighter-rouge">ctrl +k</code> 可以出 （<code class="language-plaintext highlighter-rouge">ctrl +k</code>引数 <code class="language-plaintext highlighter-rouge">Ctrl + Shift + M</code> out 引数）
+   <img src="/_posts/UiPath/pic/111304.png" alt="" /><br />
+   日语版本不识别英文指令？？？</p>
+  </li>
+</ul>
+
+<p>-
+  这四个方法是对的啊，是我视频听岔了？
+  <img src="/_posts/UiPath/pic/111305.png" alt="alt text" /></p>
+
+<h2 id="目標参数">目標（参数）</h2>
+
+<p><img src="/_posts/UiPath/pic/111306.png" alt="alt text" /></p>
+
+<h3 id="工作流">工作流</h3>
+
+<p><img src="/_posts/UiPath/pic/111307.png" alt="alt text" /></p>
+
+<ul>
+  <li>ステート マシン</li>
+  <li>グローバル例外ハンドラー</li>
+</ul>
+
+<h3 id="和变量的区别">和变量的区别</h3>
+<p>区别在于参数是在工作流之间传递数据，并且具有附加属性 – <strong>方向</strong>。参数具有特定的方向：In、Out 以及 In/Out。这些方向会告知 Robot 其中存储的信息应前往何处。</p>
+
+<ul>
+  <li>找不到mscorlib所以用了这个</li>
+  <li><img src="/_posts/UiPath/pic/111308.png" alt="alt text" /></li>
+</ul>
+
+<blockquote>
+  <h2 id="结束明天学数组">结束，明天学数组！</h2>
+</blockquote>
+
+<h2 id="数组">数组</h2>
+
+<ul>
+  <li>数组是最常见的具有固定大小（即创建时的大小）的集合示例。</li>
+  <li><img src="/_posts/UiPath/pic/111401.png" alt="alt text" /></li>
+</ul>
+
+<h2 id="练习">练习</h2>
+
+<ul>
+  <li>
+    <p>做了工作流的练习后才发现对变数引数的理解不对！</p>
+
+    <ul>
+      <li>主界面 放用户输入框 结果输出框</li>
+      <li>计算内容打包 invoke （此处连接Variables and Arguments）</li>
+      <li>invoke 放单独的sequence里</li>
+      <li>主界面设置Variables</li>
+      <li>工作流设置Arguments</li>
+      <li>
+        <p>年利率 固定变量 在工作流中设置default</p>
+
+        <p><span style="color: red; font-family:Noto Serif SC;"><strong>！目标实现，但写得像坨💩也是不行的！</strong></span></p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h2 id="习题">习题</h2>
+
+<ul>
+  <li><img src="image.png" alt="alt text" />
+    <blockquote>
+      <p>？？？？？ 我学过这个知识点吗？</p>
+    </blockquote>
+  </li>
+</ul>
+
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>

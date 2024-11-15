@@ -1,6 +1,7 @@
 ---
 title: UiPath Summary
 tags: uipath
+layout: default
 ---
 
 # UiPath
