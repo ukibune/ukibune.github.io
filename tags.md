@@ -1,3 +1,5 @@
 ---
 layout: tag
+tags: 
+ - tag
 ---
