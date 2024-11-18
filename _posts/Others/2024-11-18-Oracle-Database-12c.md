@@ -1,7 +1,7 @@
 ---
 title: Oracle Database 12c
 layout: default
-tags:  [Oracle]
+tags:  [oracle]
 ---
 
 Oracle Database 12cは、他のデータベースシステムと比較して、多くの利点を持っています。特に、**マルチテナント・アーキテクチャ**の導入により、データベース管理の効率化や柔軟性が飛躍的に向上しました。
