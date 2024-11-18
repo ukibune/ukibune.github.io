@@ -36,7 +36,7 @@ layout: default
 ---
 
 ## Study map
-  ![alt text](/_posts/UiPath/pic/111402.png)
+  ![alt text](/images/111402.png)
 
 ## Notes
 
@@ -50,8 +50,8 @@ layout: default
 ## WASH OUT
 
 1. 
-![alt text](/_posts/UiPath/pic/map01.png)
+![alt text](/images/map01.png)
 
-2.![alt text](./pic/map02.png)
+2.![alt text](/images/map02.png)
 
-![alt text](./pic/map03.png)
+![alt text](/images/map03.png)

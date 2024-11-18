@@ -19,7 +19,7 @@ layout: default
 上級: カスタムアクティビティの作成、Orchestratorの利用、AIとの連携
 
 ## study map
-<img src="/assets/pic/study_map_of_rpa.PNG" width="800" >
+<img src="/images/UiPath-Summary.PNG" width="800" >
 
 - [x]  [了解 UiPath Platform](https://cloud.uipath.com/meisen/academy_/courses/%E4%BA%86%E8%A7%A3-uipath-platform)
 

@@ -10,3 +10,7 @@ title: posts
   </li>
   {% endfor %}
 </ul>
+
+{% if site.paginate.enabled %}
+  {{ paginator.render }}
+{% endif %}
