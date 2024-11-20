@@ -15,8 +15,8 @@ layout: default
 | 11/15(金) | [Studio 中的控制流程](https://cloud.uipath.com/meisen/academy_/courses/studio-%E4%B8%AD%E7%9A%84%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B)：循环、切换、并行 | - | UI | - |
 | 11/18(月) | Excel | - | 字符串 | - |
 | 11/19(火) | list＆dic | - | selector | - |
-| 11/20(水) | 描述符？ | UI *面接やなどのせいで、大幅に遅れました。 | org | - |
-| 11/21(木) | 调试？ | - | debug | - |
+| 11/20(水) | 描述符？Descriptors | UI *面接やなどのせいで、大幅に遅れました。//Excel | org | Excel//字符串//selector |
+| 11/21(木) | ~~调试？~~ selector | - | ~~debug~~ 描述符（Descriptors）| - |
 | 11/22(金) | studio登录概述？ | - | Orchestrater | - |
 | 11/25(月) | 实战：mail | - | 实战：pdf | - |
 | 11/26(火) | ver control | - | test [END] | - |
@@ -40,12 +40,7 @@ layout: default
 
 ## Notes
 
-* [UiPath_Before＆c1](/02c1/)
-* [C2:Build your first automation process with Studio](/c2/)
-* [C3:A Day in the Life of an RPA Developer](/c3/)
-* [C4:Variables, Constants and Arguments in Studio](/c4/)
-* [C5:Control Flow in Studio](/c5/)
-* [C6:Intro of User Interface Automation](/c6/)
+* [uipath](https://ukibune.github.io/tag/uipath/)
 
 ## WASH OUT
 
