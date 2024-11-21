@@ -1,21 +1,23 @@
 nav {
     background-color: #33333300;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   
   .nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+     /*真ん中になる*/
+    display: inline-flex;
+    justify-content: center;
+      /*真ん中になる*/
   }
   
-  .nav li {
-    float: left;
-  }
-  
+   /*左横になる*/
+  /*.nav li {
+   float: left;
+  }*/
+
   .nav li a {
     display: block;
     color: white; 
