@@ -1,2 +1,0 @@
-# ukibune.github.io
-blog
