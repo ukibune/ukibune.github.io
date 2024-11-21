@@ -12,6 +12,7 @@ description: Acctually It's a NoteBook
 baseurl: "/"
 permalink: :title/
 layout: default
+paginate: 10
 
 nav:
   - title: Home
@@ -27,4 +28,3 @@ jekyll-archives:
   enabled: [tags]
   layout: tag
   permalink: "/tag/:tag/"
-  paginate: 10

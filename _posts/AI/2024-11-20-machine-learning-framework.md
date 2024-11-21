@@ -1,7 +1,7 @@
 ---
 title: 機械学習フレームワーク&fastai
 layout: default
-tags:  [da,machine-learning-framework,fastai]
+tags:  [machine-learning-framework,fastai,ai]
 ---
 
 ## 機械学習フレームワークとは？fastaiとの関係性

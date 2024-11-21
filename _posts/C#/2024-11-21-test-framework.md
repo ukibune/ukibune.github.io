@@ -1,7 +1,7 @@
 ---
-title: NuGetパッケージ
+title: テストフレームワーク
 layout: default
-tags:  [C#,NuGetパッケージ,テストフレームワーク]
+tags:  [csharp,nu-get-pkg,test-framework]
 ---
 
 ## テストフレームワークとは？

@@ -1,7 +1,7 @@
 ---
 title: ASP.NET Core
 layout: default
-tags:  [C#,ASP-NET-Core,MVC]
+tags:  [csharp,asp-net-core,mvc]
 ---
 
 

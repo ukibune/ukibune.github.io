@@ -1,7 +1,7 @@
 ---
-title: NuGetパッケージ
+title: テストフレームワーク-JP
 layout: default
-tags:  [JUnit,JMeter,Selenium,テストフレームワーク]
+tags:  [j-unit,j-meter,selenium,test-framework]
 ---
 
 > 営業から教えた、日本よく使うテストフレームワーク

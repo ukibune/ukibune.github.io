@@ -1,7 +1,7 @@
 ---
 title: ☆
 permalink: /show-tag/
-tags:  [aws,fastai,c#]
+tags:  [aws,fastai,csharp]
 layout: selected-tag
 ---
 
