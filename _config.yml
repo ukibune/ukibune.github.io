@@ -5,6 +5,7 @@ plugins:
 - jekyll-remote-theme
 - jekyll-archives
 - jekyll-paginate
+- jekyll-toc
 
 title: Ukibune's Blog
 description: Acctually It's a NoteBook
