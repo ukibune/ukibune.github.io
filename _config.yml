@@ -20,6 +20,8 @@ nav:
     url: /posts
   - title: ☆
     url: /show-tag
+  - title: To-Do
+    url: /To-Do
 
 jekyll-archives:
   enabled: [tags]

@@ -1,7 +1,7 @@
 ---
 title: ☆
 permalink: /show-tag/
-tags:  [salesforce,work]
+tags:  [aws,fastai,c#]
 layout: selected-tag
 ---
 

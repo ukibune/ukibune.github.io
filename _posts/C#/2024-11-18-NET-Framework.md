@@ -1,7 +1,7 @@
 ---
 title: .NET Framework学習
 layout: default
-tags:  [net-framework]
+tags:  [net-framework,C#]
 ---
 
 # .NET Framework学習のステップ
