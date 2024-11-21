@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="laylist">
+  <ul>
+    {% for tag in page.tags %}
+    <li>
+      <a href="/tag/{{ tag }}">{{ tag | upcase }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<ul>
+  {% for tag in page.tags %}
+    <li>
+      <a href="/tag/{{ tag }}">{{ tag | upcase }}</a>
+    </li>
+    <ul>
+      {% for post in site.posts %}
+        {% if post.tags contains tag %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</ul>
+
+
+{% if site.paginate.enabled %}
+  {{ paginator.render }}
+{% endif %}

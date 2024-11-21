@@ -18,10 +18,8 @@ nav:
     url: /
   - title: Posts
     url: /posts
-  - title: ゜UP_Schedule&Map
-    url: /UP-Schedule-Map/
-  - title: ゜Control Flow in Studio
-    url: /c5/
+    - title: ☆
+    url: /show-tag
 
 jekyll-archives:
   enabled: [tags]
