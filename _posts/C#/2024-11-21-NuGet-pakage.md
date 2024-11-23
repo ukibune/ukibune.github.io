@@ -1,7 +1,7 @@
 ---
 title: NuGetパッケージ
 layout: default
-tags:  [csharp,nu-get-pkg,code-format,test-framework]
+tags:  [csharp,nu-get-pkg,code-format]
 ---
 
 ## NuGetパッケージとは？
