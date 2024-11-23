@@ -1,5 +1,5 @@
 ---
-title: UiPath：PDF
+title: UiPath:PDF
 tags: [uipath,pdf]
 layout: default
 ---
