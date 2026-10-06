@@ -7,8 +7,8 @@ plugins:
 - jekyll-paginate
 - jekyll-toc
 
-title: Ukibune's Blog
-description: Acctually It's a NoteBook
+title: Anastasia's Blog
+description: NoteBook=>Blog at 2026
 baseurl: "/"
 permalink: :title/
 layout: default
