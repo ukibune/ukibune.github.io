@@ -8,7 +8,7 @@ plugins:
 - jekyll-toc
 
 title: Anastasia's Blog
-description: NoteBook=>Blog at 2026
+description: 'Anastasia\'s Blog | <a href="https://www.linkedin.com/in/shutong-liu" target="_blank" rel="noopener noreferrer">LinkedIn</a>'
 baseurl: "/"
 permalink: :title/
 layout: default
@@ -28,3 +28,6 @@ jekyll-archives:
   enabled: [tags]
   layout: tag
   permalink: "/tag/:tag/"
+
+
+linkedin: "https://www.linkedin.com/in/shutong-liu/"
