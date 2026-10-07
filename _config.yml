@@ -9,7 +9,7 @@ plugins:
 
 title: Anastasia's Blog
 description: >-
-  Anastasia's Blog | <a href="https://www.linkedin.com/in/shutong-liu" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  Anastasia's Blog | <a href="https://www.linkedin.com/in/shutong-liu" target="_blank" style="color: #ffffff" rel="noopener noreferrer">LinkedIn</a>
 baseurl: "/"
 permalink: :title/
 layout: default

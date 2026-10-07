@@ -3,7 +3,18 @@ title: 声明式 SQL 重构：复杂库存合算引擎设计
 layout: default
 tags:  [database-design, sql-server, refactoring, relational-algebra，sql-optimization, system-architecture, domain-modeling, t-sql]
 ---
+<style>
+  /* 作用於整篇正文區域，統一為中文字型棧 */
+  article, .post-content, main, body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+  }
 
+  /* 針對程式碼區塊單獨保證等寬字型 */
+  code, pre {
+    font-family: Consolas, "Courier New", monospace !important;
+  }
+</style>
 
 
 

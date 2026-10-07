@@ -5,12 +5,12 @@ layout: default
 # To-Do
 
 
-* <input type="checkbox"> Case Study 1（Mandarin）
-* <input type="checkbox"> Case Study 1（English）
-* <input type="checkbox"> Case Study 1（Japanese）
-* <input type="checkbox"> Case Study 2（Mandarin）
-* <input type="checkbox"> Case Study 2（English）
-* <input type="checkbox"> Case Study 2（Japanese）
-* <input type="checkbox"> Case Study 3（Mandarin）
-* <input type="checkbox"> Case Study 3（English）
-* <input type="checkbox"> Case Study 3（Japanese）
+* <input type="checkbox" checked> CaseReview 1（Mandarin）
+* <input type="checkbox" checked> CaseReview 1（English）
+* <input type="checkbox"> CaseReview 1（Japanese）
+* <input type="checkbox"> CaseReview 2（Mandarin）
+* <input type="checkbox"> CaseReview 2（English）
+* <input type="checkbox"> CaseReview 2（Japanese）
+* <input type="checkbox"> CaseReview 3（Mandarin）
+* <input type="checkbox"> CaseReview 3（English）
+* <input type="checkbox"> CaseReview 3（Japanese）
