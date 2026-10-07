@@ -1,5 +1,5 @@
 ---
-title: NuGet:
+title: NuGet-find
 layout: default
 tags:  [csharp,nu-get-pkg,]
 ---
