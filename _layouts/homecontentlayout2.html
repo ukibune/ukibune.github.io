@@ -11,7 +11,6 @@ layout: default
               {% if post_year == "2026" %}
                 {% assign has_2026 = true %}
                 <li>
-                  <span>{{ post.date | date: "%Y-%m-%d" }}</span> - 
                   <a href="{{ post.url }}">{{ post.title }}</a>
                 </li>
               {% endif %}
