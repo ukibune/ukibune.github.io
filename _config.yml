@@ -8,7 +8,8 @@ plugins:
 - jekyll-toc
 
 title: Anastasia's Blog
-description: 'Anastasia\'s Blog | <a href="https://www.linkedin.com/in/shutong-liu" target="_blank" rel="noopener noreferrer">LinkedIn</a>'
+description: >-
+  Anastasia's Blog | <a href="https://www.linkedin.com/in/shutong-liu" target="_blank" rel="noopener noreferrer">LinkedIn</a>
 baseurl: "/"
 permalink: :title/
 layout: default
