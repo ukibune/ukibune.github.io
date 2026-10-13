@@ -1,7 +1,7 @@
 ---
 title: 声明式 SQL 重构：复杂库存合算引擎设计
 layout: default
-tags:  [database-design, sql-server, refactoring, relational-algebra，sql-optimization, system-architecture, domain-modeling, t-sql]
+tags:  [database-design, sql-server, refactoring, relational-algebra，sql-optimization, system-architecture, domain-modeling, t-sql，casereview]
 ---
 <style>
   /* 作用於整篇正文區域，統一為中文字型棧 */
@@ -29,11 +29,11 @@ tags:  [database-design, sql-server, refactoring, relational-algebra，sql-optim
 
 ### 1. 数据库引擎层面的物理痛点
 
-- **系统缺乏可观测性与潜在执行计划漂移风险**：动态 SQL 拼接导致每次传入不同过滤组合时生成的 SQL 文本极度分散，查询性能在实际生产中极难聚合追踪（缺乏统一指纹可查）；面对不同过滤参数组合，优化器存在基数估算（Cardinality Estimation）失真以及执行计划异常漂移的理论风险。
+- **缺乏可观测性**：动态 SQL 拼接导致查询结构多变，无法生成稳定的查询指纹（Query Hash），生产环境下的执行耗时、调用频次等性能指标难以按单一功能进行聚合追踪。   
+- 
+- **潜在执行计划漂移风险（Plan Drift）**：面对不同过滤条件的动态组合，优化器容易出现基数估算（Cardinality Estimation）偏差，存在执行计划异常跳变、导致查询耗时剧烈抖动的潜在风险。
     
-- **执行计划缓存污染（Plan Cache Bloat）**：动态拼接生成的 SQL 文本散落发散，产生大量难以复用的一次性执行计划缓存，持续占用内存。
-    
-- **优化器黑盒行为**：大单体动态查询让优化器陷入黑盒状态，缺乏透明度与可预测性。
+- **执行计划缓存膨胀（Plan Cache Bloat）**：动态拼接导致查询的谓词结构（Query Shape）存在大量不同组合，为每种条件组合都编译了独立的一次性执行计划，持续占用并浪费内存。
     
 - **物理 I/O 穿透隐患**：随着未来业务数据量扩展，失真的执行计划和不可控的查询存在击穿内存缓存、引发大量物理磁盘读取的潜在风险。
     
@@ -49,9 +49,11 @@ tags:  [database-design, sql-server, refactoring, relational-algebra，sql-optim
 
 ## 三、 核心架构思路与设计原则
 
-1. **业务约束边界显性化**：动手前首先抽取全部业务规则，清晰厘清系统所需满足的硬性业务约束全集。
+1. **业务约束边界显性化**：
+    - 动手前首先抽取全部业务规则，清晰厘清系统所需满足的硬性业务约束全集。
     
-2. **谓词关系的集合化改写**：鉴于关系数据库引擎对集合操作（`JOIN`）的执行效率显著优于逐行分支判定，尽可能将过程式 `WHERE` 判定改写为基于规则表/驱动表的 `JOIN`。
+2. **谓词关系的集合化改写**：
+    - 鉴于关系数据库引擎对集合操作（`JOIN`）的执行效率显著优于逐行分支判定，尽可能将过程式 `WHERE` 判定改写为基于规则表/驱动表的 `JOIN`。
     
 3. **职责边界归位（Separation of Logical and Physical）**：
     
@@ -60,10 +62,7 @@ tags:  [database-design, sql-server, refactoring, relational-algebra，sql-optim
     - 数据库优化器缺乏业务全局感知，将其求解空间严格限制在局部子集内，专职负责局部物理执行路径的优化。
         
 4. **统一输入上下文（Unified Request Context / `@ctx`）**：
-    
-    - 收敛外部所有离散入参为单一事实源（Single Source of Truth）；
-        
-    - 隔离外部入参变异，同时为断点排查与条件校验提供唯一查验入口。
+    - 将外部传入的离散参数收敛为单一可信数据源（SSOT: Single Source of Truth），统一完成默认值赋予与参数标准化，避免下游计算逻辑直接依赖外部离散输入，同时为调试与边界值验证提供唯一的校验切入点。
         
 5. **分阶段物化流水线（三层表变量载体）**：
     

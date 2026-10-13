@@ -1,14 +1,14 @@
 ---
 title: "Declarative SQL Refactoring: Designing a Reliable Inventory Calculation Engine"
 layout: default
-tags: [database-design, sql-server, refactoring, relational-algebra, sql-optimization, system-architecture, domain-modeling, t-sql]
+tags: [database-design, sql-server, refactoring, relational-algebra, sql-optimization, system-architecture, domain-modeling, t-sql，casereview]
 ---
 
 ## I. Background
 
 1. **Business Changes Broke Legacy Calculations**: The original reserved inventory calculation worked as intended when first released. But as the business evolved, warehouse processes shifted and how the team used certain tables and fields drifted from their initial design. Over time, the legacy query began producing inaccurate inventory numbers and could no longer support daily operations.
     
-2. **Team Leader's Suggestion**: While fixing the bug, my Team Leader suggested taking a step back to see if we could redesign the overall query to make it fundamentally cleaner and more reliable.
+2. **Team Leader's Suggestion**: While fixing the bug, my Team Leader suggested seeing if there might be a better overall approach to the query.
     
 ## II. Problems with the Legacy Implementation
 

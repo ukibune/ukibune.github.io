@@ -1,7 +1,7 @@
 ---
-title: ☆
+title: show-tag
 permalink: /show-tag/
-tags:  [aws,fastai,csharp]
+tags:  [casereview]
 layout: selected-tag
 ---
 
