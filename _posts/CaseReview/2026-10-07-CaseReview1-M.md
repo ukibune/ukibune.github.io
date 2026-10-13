@@ -1,7 +1,7 @@
 ---
-title: 声明式 SQL 重构：复杂库存合算引擎设计
+title: 声明式 SQL 重构：多维约束下的即时 ATP（发货可行性）判定引擎设计
 layout: default
-tags:  [database-design, sql-server, refactoring, relational-algebra，sql-optimization, system-architecture, domain-modeling, t-sql，casereview]
+tags:  [database-design, sql-server, refactoring, relational-algebra, sql-optimization,system-architecture, domain-modeling, t-sql, casereview]
 ---
 <style>
   /* 作用於整篇正文區域，統一為中文字型棧 */
@@ -17,6 +17,7 @@ tags:  [database-design, sql-server, refactoring, relational-algebra，sql-optim
 </style>
 
 
+![case1](./Attachments/case1.png)
 
 ## 一、 背景
 
@@ -30,7 +31,7 @@ tags:  [database-design, sql-server, refactoring, relational-algebra，sql-optim
 ### 1. 数据库引擎层面的物理痛点
 
 - **缺乏可观测性**：动态 SQL 拼接导致查询结构多变，无法生成稳定的查询指纹（Query Hash），生产环境下的执行耗时、调用频次等性能指标难以按单一功能进行聚合追踪。   
-- 
+  
 - **潜在执行计划漂移风险（Plan Drift）**：面对不同过滤条件的动态组合，优化器容易出现基数估算（Cardinality Estimation）偏差，存在执行计划异常跳变、导致查询耗时剧烈抖动的潜在风险。
     
 - **执行计划缓存膨胀（Plan Cache Bloat）**：动态拼接导致查询的谓词结构（Query Shape）存在大量不同组合，为每种条件组合都编译了独立的一次性执行计划，持续占用并浪费内存。
@@ -73,19 +74,19 @@ tags:  [database-design, sql-server, refactoring, relational-algebra，sql-optim
         - **Layer 2: Master Attribute Enrichment（主数据属性补全）**：明细对齐展开规则，补全主数据与关联维度；
             
         - **Layer 3: Cascading Stock Calculations（级联库存计算）**：联动结算现存（On-hand）、预订（Reserved）及可用（Available）库存。
-## 四、 架构推导过程与数学原理收敛
+## 四、 架构推导过程與數理模型的後驗對齊
 
 1. **架构推导心智模型**：
-    
-    - 架构推导的本质是把全量业务约束同时装进脑海，通过多维约束的交叉涌现与隐性剪枝（Implicit Pruning），直接收敛至拓扑最优解，因此架构构思耗时极短。
+ - 架构推导的本质是把全量业务约束同时装进脑海，通过多维约束的交叉涌现与隐性剪枝（Implicit Pruning），直接收敛至拓扑最优解，因此架构构思耗时极短。
         
-2. **关系代数原理的工程契合**： 该拓扑设计在工程确定性上严格契合关系代数模型，消除了传统过程式逻辑的不确定性：
-    
-    - **关系复合替代条件分支（Composition of Relations）**：将动态条件跳转转化为自然连接（Natural Join），固定整体查询拓扑；
-        
-    - **笛卡尔积空间的主动降维（Restriction & Projection Pushdown）**：阶段性物化过滤，将全表无约束搜索截断为低维局部求交；
-        
-    - **确定性代价包络（Deterministic Cost Envelope）**：拓扑固定后，执行物理代价退化为线性/对数紧凑包络线，彻底消除耗时抖动。
+2. **数学视角的后验对齐（事后调查与理论映射参考）**：
+
+ - 在完成整套重构并复盘代码机制时，进一步调查发现，系统中的具体工程实现恰好在不同维度上对应了数理逻辑与抽象代数的形式化概念。個人覺得世界的本質是數學，如果一個設計不糟糕必然符合一定的數學原理。（以下仅作理论映射参考,本人也在學習中）：
+
+   - 数据定义层: 集合论的外延定义（通过全展开表预先将业务规则集合实例化）
+   - 全局架构层: 范畴论中的射之复合（通过传递 @ctx 构建无副作用的 3 层纯函数式流水线）
+   - 关系与属性层: 直积空间与一阶谓词逻辑（通过行值构造器就地实例化局部元组并执行谓词限制 $\sigma$）
+   - 控制流调停层: 偏序集与格论中的极值演算（基于良序/偏序关系实现优先级回退与最终原因提取）
 
 ## 五、 系统整体执行框架
 
@@ -183,7 +184,7 @@ tags:  [database-design, sql-server, refactoring, relational-algebra，sql-optim
     
     - 最初在 SQL 内部利用临时表（`#TempTable`）做确定性排序；
         
-    - 组内规避使用临时表，认为临时表“会一直留在缓存里”。当时对此说法存疑（感觉不太可能），但当场缺乏足够的底层理论深度去直接推翻；
+    - 组内规避使用临时表，认为临时表“会一直留在缓存里”。当时对此说法存疑（感觉不太可能）但由于当时的自己缺乏能够验证和判断底层机制的充分知识，選擇遵从团队的决定。
         
 - **落地选择**：
     
@@ -208,7 +209,7 @@ tags:  [database-design, sql-server, refactoring, relational-algebra，sql-optim
 
 针对多分支判断与动态取值，全面摒弃深层嵌套的 `CASE WHEN`，统一采用 `CROSS APPLY` / `OUTER APPLY` 结合行构建器（`VALUES`）将过程式逻辑转化为集合操作。在实际落地中，抽象为三种不同的数据流重塑模式：
 
-### 1. 结构层：动态选列行化（Unpivot / Column-to-Row Inversion）
+### 1. 结构层：行构造器驱动的局部元组化（Inline Tupling / Column-to-Row Inversion）
 
 - **机制与实现**：
     
@@ -218,7 +219,7 @@ tags:  [database-design, sql-server, refactoring, relational-algebra，sql-optim
         
 - **模式代码**：
     
-    ```
+    ```sql
     CROSS APPLY (
         SELECT c.Val
         FROM (
@@ -230,12 +231,13 @@ tags:  [database-design, sql-server, refactoring, relational-algebra，sql-optim
     ) resolved
     ```
     
-- **代数本质与模型价值**：
-
-  - **消除列维度的条件耦合**：关系代数的运算强项在于行集合的谓词演算，而非列属性之间的动态分支；通过局部行化，将原本非关系型的“运行时动态列选择”，规范化为标准的一阶关系限制（Restriction $\sigma$）与自然连接（Join $\Join$）。
-    
-  - **保持关系闭包的静态拓扑**：避免将 Schema 维度的多态性暴露给查询顶层，使中间态流转始终在正交、确定的元组集合内闭环。
-        
+- **对应数学原理与理论模型**:
+  - **集合论**：笛卡尔积上的元组构造与外延定义（Cartesian Product & Extensional Definition）:
+    针对定义域 $D_{\text{Tag}} \times D_{\text{Val}}$ 的直积空间，利用行值构造器（`VALUES`）对外延元素进行显式罗列，在局部作用域内直接实例化二元关系（虚拟元组集合）。
+  - **一阶谓词逻辑**：映射为限制算子（First-Order Predicate Restriction $\sigma$）:
+    剔除过程式条件跳转（`CASE WHEN`），将取值逻辑还原为针对局部元组集合应用一阶谓词限制算子（$\sigma_{c.\text{MatchTag} = @\text{ctx}.\text{RequiredTag}}$），回归标准关系代数运算。
+  - **代数系统**：关系代数的闭包性（Relational Closure Property）:
+    将跨列取值的动作严格封闭在 `APPLY` 局部的子关系运算内，确保输入、中间过程与输出始终保持在关系（元组集合）闭包之中，对外层模式保持正交透明。      
 
 ### 2. 状态层：多数据源降级与优先级仲裁（Priority Fallback Pipeline）
 
@@ -263,7 +265,8 @@ tags:  [database-design, sql-server, refactoring, relational-algebra，sql-optim
     - 承接 Layer 3 計算出的各項校驗狀態，利用 `APPLY (VALUES ...)` 映射為帶優先級的理由行集：
         
 - **模式代码**：
-        
+
+    ```sql
         OUTER APPLY (
             SELECT TOP 1 Reason
             FROM (
@@ -274,9 +277,20 @@ tags:  [database-design, sql-server, refactoring, relational-algebra，sql-optim
             WHERE r.IsHit = 1
             ORDER BY r.Priority
         ) unship_reason
- 
+    ```
 - **運用場景**：
     
     - 當明細判定為「出荷不可」時，按優先級直接提取首要的未滿足項作為展示理由；
         
     - 校驗判定與文本展示清晰分離，增改文案或優先級時不影響核心計算流水線。
+
+
+## 九、最後
+
+1. 各種術語如果有用錯的地方請不要客氣的指正我，用術語只是爲了盡量准確的表達和傳遞信息，并不是我真的對概念駕輕就熟。
+2. 還有另外兩個案例想復盤，大致内容如下。
+![case23](./Attachments/case23.png)
+
+1. 在找工作，有興趣可以聯係我。這是我的[領英](https://www.linkedin.com/in/liu-shutong)。
+
+[def]: image.png

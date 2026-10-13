@@ -1,5 +1,5 @@
 ---
-title: "Declarative SQL Refactoring: Designing a Reliable Inventory Calculation Engine"
+title: "【WIP】Declarative SQL Refactoring: Designing a Reliable Inventory Calculation Engine"
 layout: default
 tags: [database-design, sql-server, refactoring, relational-algebra, sql-optimization, system-architecture, domain-modeling, t-sql，casereview]
 ---
@@ -32,9 +32,11 @@ tags: [database-design, sql-server, refactoring, relational-algebra, sql-optimiz
 
 ## III. Core Architecture & Design Principles
 
-1. **Clarify Business Invariants First**: Before writing any SQL, extract all business rules into a complete, explicit list of constraints.
+1. **Clarify Business Invariants First**: 
+    - Before writing any SQL, extract all business rules into a complete, explicit list of constraints.
     
-2. **Set-Based Joins Over Procedural Branching**: Relational database engines handle set operations (`JOIN`) far better than row-by-row procedural branching. Wherever possible, procedural `WHERE` conditions were rewritten into declarative joins against rule and driver tables.
+2. **Set-Based Joins Over Procedural Branching**: 
+   - Relational database engines handle set operations (`JOIN`) far better than row-by-row procedural branching. Wherever possible, procedural `WHERE` conditions were rewritten into declarative joins against rule and driver tables.
     
 3. **Clear Boundary Between Logic and Physical Execution**:
     - The engineer understands the overall business domain and actively designs the data pipeline and materialization boundaries.
@@ -48,7 +50,7 @@ tags: [database-design, sql-server, refactoring, relational-algebra, sql-optimiz
     - Breaks the main calculation pipeline into three distinct stages using table variables (`@TableVariable`) as intermediate carriers. This decouples downstream consumption and provides clean inspection points:
         - **Layer 1: Line-item Filtering**: Filters valid order line items against `@ctx`.
         - **Layer 2: Master Attribute Enrichment**: Joins items against rule tables to attach master dimensional metadata.
-        - **Layer 3: Cascading Stock Calculations**: Calculates on-hand, reserved, and available stock tiers using deterministic relational operations.
+        - **Layer 3: Cascading Stock Calculations**: Cascades and resolves on-hand, reserved, and available stock across tiers.
 
 ## IV. Mathematical Formulation & Algebraic Convergence
 
